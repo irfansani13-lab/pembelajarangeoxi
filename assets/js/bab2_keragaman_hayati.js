@@ -5,6 +5,8 @@ window.BAB_DATA.bab2 = {
   mindful: {
     emoji: "🌿🐅🦜",
     fenomena: "Orangutan hidup di Kalimantan dan Sumatra, sedangkan burung cenderawasih ada di Papua. Jaraknya hanya terpisah beberapa selat, tetapi satwanya sangat berbeda. Di sisi lain, harimau Bali dan harimau Jawa sudah punah.",
+    img: "assets/images/orangutan_dan_cendrawasih (1).png",
+    alt: "Orangutan dan burung cenderawasih di hutan tropis",
     pertanyaan: ["Mengapa hewan di Indonesia barat dan timur bisa berbeda?", "Apa yang hilang bila satu spesies punah?"]
   },
   concept: [
@@ -16,30 +18,42 @@ window.BAB_DATA.bab2 = {
           "Mamalia dan kupu-kupu swallowtail terbanyak di dunia; <b>1.519 jenis burung, 270 amfibi, 600 reptil</b>"] }
       ] },
     { h: "2A. Bioma Utama Dunia", tag: "Ketuk gambar untuk melihat penjelasan",
-      hs: { img: "assets/images/bioma_dunia_lengkap.png", alt: "Enam bioma utama dunia",
+      hs: { img: "assets/images/bioma_dunia_7_bioma.png", alt: "Ilustrasi tujuh bioma utama dunia",
         cap: "Ketuk salah satu bioma pada gambar, atau pilih namanya di bawah, untuk menyorot dan membaca penjelasannya.",
         items: [
-          { n: "Tundra", t: "1. Bioma Tundra", x: 2.19, y: 3.64, w: 30.94, h: 45.94, li: [
+          { n: "Tundra", t: "1. Bioma Tundra", x: 1.3, y: 5.8, w: 49, h: 28.7, li: [
             "<b>Karakteristik visual</b>: dataran tanpa pohon yang tertutup es/salju tipis, permafrost (lapisan tanah membeku abadi), vegetasi lumut (lichen) dan semak kerdil, serta aurora di langit kutub",
             "<b>Ciri utama</b>: iklim dingin ekstrem (kutub), musim dingin sangat panjang dan gelap; fauna khas rubah kutub (arctic fox), rusa kutub (reindeer), dan beruang kutub"] },
-          { n: "Taiga", t: "2. Bioma Taiga (Hutan Boreal)", x: 33.91, y: 3.64, w: 32.34, h: 45.94, li: [
+          { n: "Taiga", t: "2. Bioma Taiga (Hutan Boreal)", x: 50.6, y: 5.8, w: 48, h: 28.7, li: [
             "<b>Karakteristik visual</b>: hutan pohon konifer (pinus, cemara, spruce) berdaun jarum yang selalu hijau (evergreen), dengan bercak salju dan vegetasi lantai hutan",
             "<b>Ciri utama</b>: wilayah subartik (Rusia/Siberia, Skandinavia, Kanada), musim dingin panjang dan dingin; fauna khas beruang cokelat, serigala, dan rusa moos"] },
-          { n: "Hutan Gugur", t: "3. Bioma Hutan Gugur (Temperate Deciduous Forest)", x: 66.88, y: 3.64, w: 30.94, h: 45.94, li: [
+          { n: "Hutan Gugur", t: "3. Bioma Hutan Gugur (Temperate Deciduous Forest)", x: 1.3, y: 35.5, w: 49, h: 31, li: [
             "<b>Karakteristik visual</b>: deretan pohon berdaun lebar dengan warna gugur yang hangat (merah, oranye, kuning keemasan) serta dedaunan yang berguguran di lantai hutan",
             "<b>Ciri utama</b>: 4 musim yang jelas (panas, gugur, dingin, semi), iklim sedang (Amerika Utara, Eropa, Asia Timur); fauna khas rusa, tupai, dan burung migran"] },
-          { n: "Hutan Hujan Tropis", t: "4. Bioma Hutan Hujan Tropis", x: 2.19, y: 50.7, w: 30.94, h: 45.94, li: [
+          { n: "Hutan Hujan Tropis", t: "4. Bioma Hutan Hujan Tropis", x: 50.6, y: 35.5, w: 48, h: 31, li: [
             "<b>Karakteristik visual</b>: hutan sangat lebat dan hijau dengan kanopi bertingkat, tumbuhan merambat (liana), epifit (anggrek, paku-pakuan), serta kelembapan tinggi",
             "<b>Ciri utama</b>: di sekitar garis khatulistiwa (Indonesia, Brasil/Amazon, Kongo), curah hujan dan penyinaran matahari tinggi sepanjang tahun; biodiversitas flora dan fauna tertinggi di bumi"] },
-          { n: "Sabana", t: "5. Bioma Sabana (Savanna)", x: 33.91, y: 50.7, w: 32.34, h: 45.94, li: [
+          { n: "Sabana", t: "5. Bioma Sabana (Savanna)", x: 1.3, y: 67, w: 32.2, h: 31, li: [
             "<b>Karakteristik visual</b>: padang rumput luas diselingi pohon yang tumbuh jarang (akasia dan baobab) di bawah terik matahari",
             "<b>Ciri utama</b>: daerah tropis hingga subtropis dengan curah hujan sedang dan musim kering yang kontras (Afrika, Australia, Nusa Tenggara Indonesia); fauna khas jerapah, singa, zebra, dan gajah"] },
-          { n: "Gurun", t: "6. Bioma Gurun (Desert)", x: 66.88, y: 50.7, w: 30.94, h: 45.94, li: [
+          { n: "Stepa", t: "6. Bioma Stepa", x: 33.7, y: 67, w: 32.7, h: 31, sections: [
+            { h: "Karakteristik Visual", li: [
+              "Hamparan luas terbuka: bentang alam berupa dataran padang rumput yang membentang luas tanpa sekat pohon tinggi.",
+              "Minim atau tanpa pohon: umumnya tidak memiliki pohon besar, kecuali di sekitar aliran sungai atau danau.",
+              "Dominasi rumput dan semak: tertutup rumput (pendek hingga tinggi) dan semak belukar kecil yang tahan kering.",
+              "Warna musiman yang kontras: tampak lebih hijau saat lembap/hujan dan cenderung mengering atau kekuningan saat kemarau/kering."] },
+            { h: "Ciri Utama", li: [
+              "Curah hujan rendah dan tidak teratur: umumnya sekitar 250–500 mm per tahun.",
+              "Kelembapan rendah dan penguapan tinggi: udara cenderung kering dengan laju evaporasi yang tinggi.",
+              "Suhu ekstrem: perbedaan suhu cukup mencolok antara siang dan malam, serta antara musim panas dan musim dingin.",
+              "Tanah kurang subur untuk pohon besar: porositas tanah rendah sehingga kurang baik menyimpan cadangan air, sementara akar rumput yang dalam membantu menahan erosi.",
+              "Fauna khas padang rumput: dihuni hewan herbivora seperti rusa, antelop, kuda liar, atau bison, serta predator terkait di wilayah tertentu."] }
+          ] },
+          { n: "Gurun", t: "7. Bioma Gurun (Desert)", x: 66.7, y: 67, w: 32, h: 31, li: [
             "<b>Karakteristik visual</b>: hamparan bukit pasir (sand dunes), batu-batuan, vegetasi xerofit berkulit tebal/berduri (kaktus), dan sinar matahari terik",
             "<b>Ciri utama</b>: penguapan (evaporasi) jauh lebih tinggi daripada curah hujan (&lt;250 mm/tahun), beda suhu siang dan malam sangat ekstrem; fauna khas unta, kadal, dan kalajengking"] }
-        ] },
-      groups: [ { t: "Catatan: Stepa", li: ["<b>Stepa</b>: padang rumput luas tanpa selingan pohon"] } ] },
-    { h: "2A-2. Tabel Perbandingan 6 Bioma", tag: "Lokasi · iklim · flora dan fauna",
+        ] } },
+    { h: "2A-2. Tabel Perbandingan 7 Bioma", tag: "Lokasi · iklim · flora dan fauna",
       table: { head: ["Bioma", "Lokasi persebaran geografis", "Karakteristik iklim dan vegetasi", "Contoh flora dan fauna khas"],
         rows: [
           ["Bioma Tundra", "Belahan bumi utara di lingkungan Kutub Utara (Arktik)", "Musim dingin panjang dan gelap, musim panas terang terus-menerus. Tidak ada pohon tinggi; tanah membeku abadi (permafrost), didominasi vegetasi kerdil dan lumut", "<b>Flora</b>: lumut kerak (lichenes), sphagnum, semak kerdil<br><b>Fauna</b>: beruang kutub, rusa kutub, anjing laut, walrus, kelinci kutub"],
@@ -47,6 +61,7 @@ window.BAB_DATA.bab2 = {
           ["Bioma Hutan Gugur", "Amerika Utara bagian timur dan wilayah beriklim sedang di Eropa", "4 musim yang jelas (semi, panas, gugur, dingin), curah hujan 750–1.000 mm/tahun. Pohon menggugurkan daun (meranggas) dari musim gugur hingga dingin", "<b>Flora</b>: pohon berdaun lebar yang meranggas pada musim dingin<br><b>Fauna</b>: rakun, kalkun liar, bison, tupai, burung pelatuk, kelinci"],
           ["Bioma Hutan Hujan Tropis", "Kawasan khatulistiwa: Indonesia (Sumatra, Kalimantan, Sulawesi, Papua), Amerika Selatan (Amazon), dan Afrika Tropis", "Suhu tinggi (&gt;18°C) dan curah hujan melimpah (1.750–2.000 mm/tahun). Kerapatan tinggi dengan kanopi rapat (20–40 m), kelembapan tinggi, biodiversitas terluas", "<b>Flora</b>: liana (rotan), epifit (anggrek), rasamala, pinus, damar, jemuju<br><b>Fauna</b>: orangutan, kera hidung merah, tapir, piranha, belut listrik, cendrawasih"],
           ["Bioma Sabana", "Indonesia (Nusa Tenggara: Flores, Timor, Sumba; Jawa Timur/Bali), Afrika, dan Australia", "Padang rumput luas diselingi semak belukar dan pohon tinggi di daerah kering dengan curah hujan rendah (&lt;1.200 mm/tahun)", "<b>Flora</b>: rumput, akasia, Leguminosae, Caesalpinea, Euphorbiaceae<br><b>Fauna</b>: singa, jerapah, gajah, zebra, kijang"],
+          ["Bioma Stepa", "Wilayah beriklim kering dan kontinental, terutama Asia Tengah, Eropa Timur, serta padang rumput Amerika Utara", "Padang rumput terbuka dengan sangat sedikit atau tanpa pohon besar; curah hujan rendah dan tidak teratur (sekitar 250–500 mm/tahun), udara kering, dan suhu musiman ekstrem", "<b>Flora</b>: rumput dan semak kecil tahan kering<br><b>Fauna</b>: rusa, antelop, kuda liar, bison, serta predator terkait"],
           ["Bioma Gurun", "Daerah tropis dan subtropis (Afrika Utara, Pasifik Timur)", "Curah hujan sangat rendah (≤250 mm/tahun), penguapan sangat tinggi; suhu siang sangat panas (&gt;40°C) dan malam sangat dingin", "<b>Flora</b>: tumbuhan xerofit berdaun duri/berakar panjang (kaktus, semak berdaun keras)<br><b>Fauna</b>: unta, tikus berkantung, kadal, kalajengking"]
         ] } },
     { h: "2B. Delapan Wilayah Biogeografis Dunia", tag: "Alfred Russel Wallace, 1876",

@@ -111,7 +111,7 @@
 
   function mindful(b) {
     var m = b.mindful;
-    return '<div class="card"><h2>🧘 Mindful Start</h2>' + (m.emoji ? '<div class="emo">' + m.emoji + "</div>" : "") + "<p>" + m.fenomena + "</p>" + img(m.img, m.alt || b.short) + "<h3>Renungkan sejenak</h3><ul>" + m.pertanyaan.map(function (p) { return "<li>" + p + "</li>"; }).join("") + '</ul><button class="btn" data-go="1">Mulai Belajar →</button></div>';
+    return '<div class="card"><h2>🧘 Mindful Start</h2>' + (m.emoji ? '<div class="emo">' + m.emoji + "</div>" : "") + "<p>" + m.fenomena + "</p>" + img(m.img, m.alt || b.short, "mindful-img") + "<h3>Renungkan sejenak</h3><ul>" + m.pertanyaan.map(function (p) { return "<li>" + p + "</li>"; }).join("") + '</ul><button class="btn" data-go="1">Mulai Belajar →</button></div>';
   }
   function esc(t) { return String(t == null ? "" : t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   function fig(k, cap) { var v = window.ILUS && window.ILUS[k]; return v ? '<figure class="fig">' + v + (cap ? "<figcaption>" + cap + "</figcaption>" : "") + "</figure>" : ""; }
@@ -120,7 +120,7 @@
     var pos = function (it) { return "left:" + it.x + "%;top:" + it.y + "%;width:" + it.w + "%;height:" + it.h + "%"; };
     return '<div class="hs"><div class="hsimg">' + img(c.img, c.alt) + c.items.map(function (it, i) { return '<button class="hsa" data-hs="' + i + '" aria-label="' + it.n + '" style="' + pos(it) + '"></button>'; }).join("") + "</div>" +
       '<p class="cap">' + (c.cap || "Ketuk bagian gambar atau nama di bawah untuk melihat penjelasan.") + '</p><div class="hsc">' + c.items.map(function (it, i) { return '<button data-hs="' + i + '">' + it.n + "</button>"; }).join("") + "</div>" +
-      c.items.map(function (it, i) { return '<div class="hsd" data-hsd="' + i + '" hidden><h3>' + it.t + "</h3>" + li(it.li) + "</div>"; }).join("") +
+      c.items.map(function (it, i) { return '<div class="hsd" data-hsd="' + i + '" hidden><h3>' + it.t + "</h3>" + (it.sections ? it.sections.map(function (s) { return "<h4>" + s.h + "</h4>" + li(s.li); }).join("") : li(it.li)) + "</div>"; }).join("") +
       '<button class="btn alt hsz" data-zoom="' + c.img + '">🔍 Perbesar gambar</button></div>';
   }
   function concept(b) {
